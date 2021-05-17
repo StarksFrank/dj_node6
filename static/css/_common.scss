@@ -1,0 +1,39 @@
+//定义一个像素的总宽度和高度
+//元素被计算。 border-box值使边框和填充
+//宽度和高度值的一部分。这样可以更轻松地设置元素的样式
+* {
+box-sizing: border-box; }
+body {
+font-family: 'Open Sans', sans-serif;
+padding-top: 50px;
+background-color: #f8f8f8; }
+html {
+//  滚动声明将垂直滚动条添加到页面
+//以防止当您来自带有以下内容的页面时出现不必要的“偏移”效果
+//页面内容过多，内容不足以显示滚动条
+overflow-y: scroll; }
+a {
+color: #000; }
+p {line-height: 1.5em; }
+h1, h2 {
+color: #333;
+margin-top: 0; }
+.tags-title {
+margin: 1.5em;
+font-size: 1.3em; }
+
+.button,
+button[type="submit"],
+input[type="submit"] {
+background-color: #558FE7;
+border-color: #558FE7;
+border-radius: 1px;
+padding: 0.8em 1.5em;
+color: #fff;
+display: inline-block;
+margin: 0.5em 0.5em 0.5em 0;
+text-decoration: none;
+width: auto; }
+
+.warning {
+background-color: #E75555; }

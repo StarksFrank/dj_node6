@@ -1,0 +1,17 @@
+<body>
+<div class="header">...</div>
+<!-- start -->
+<div class="main">
+<div class="content">
+{% block title %}{% endblock %}
+{% block content %}Some default content{% endblock %}
+</div>
+<div class="sidebar">
+<div class="sidebar-ad">
+Advertisement
+</div>
+{% include 'blog/_post_list.html' with heading='Latest posts' %}
+</div>
+</div>
+<!-- end -->
+</body>

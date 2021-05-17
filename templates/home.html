@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% if tag %}
+    <p>Posts tagged with <strong>"{{ tag.name }}"</strong></p>
+{% endif %}
+{% for post in posts %}
+<!-- start -->
+    {% include 'blog/_post.html' with post=post %}
+<!-- end -->
+{% endfor %}
+{% include '_pagination.html' with items=posts %}
+{% endblock %}
